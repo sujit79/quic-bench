@@ -28,16 +28,16 @@ CGO_LDFLAGS="-L$GOPATH/src/github.com/devsisters/goquic/lib/$GOOS_$GOARCH"
 For example, building quicbench in Mac:
 
 ```bash
-CGO_LDFLAGS="-L$GOPATH/src/github.com/devsisters/goquic/lib/darwin_amd64" go build $GOPATH/github.com/devsisters/quicbench/quicbench.go
+CGO_LDFLAGS="-L$GOPATH/src/github.com/devsisters/goquic/lib/darwin_amd64" go build quicbench.go
 ```
 
 ```bash
-CGO_LDFLAGS="-L$GOPATH/src/github.com/devsisters/goquic/lib/darwin_arm64" go build $GOPATH/github.com/devsisters/quicbench/quicbench.go
+CGO_LDFLAGS="-L$GOPATH/src/github.com/devsisters/goquic/lib/darwin_arm64" go build quicbench.go
 ```
 In Linux:
 
 ```bash
-CGO_LDFLAGS="-L$GOPATH/src/github.com/devsisters/goquic/lib/linux_amd64" go build $GOPATH/github.com/devsisters/quicbench/quicbench.go
+CGO_LDFLAGS="-L$GOPATH/src/github.com/devsisters/goquic/lib/linux_amd64" go build quicbench.go
 ```
 
 ## Usage
