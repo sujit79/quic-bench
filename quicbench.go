@@ -249,7 +249,7 @@ func TimeoutDialer(result *Result, connectTimeout, readTimeout, writeTimeout tim
 func MyClient(result *Result, connectTimeout, readTimeout, writeTimeout time.Duration) *http.Client {
 
 	return &http.Client{
-		Transport: gospdyquic.NewRoundTripper(keepQuicConn),
+		Transport: goquic.NewRoundTripper(keepQuicConn),
 	}
 }
 
