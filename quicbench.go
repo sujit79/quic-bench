@@ -18,7 +18,6 @@ import (
 	"time"
 
 	"github.com/devsisters/goquic"
-	"github.com/devsisters/gospdyquic"
 )
 
 var (
