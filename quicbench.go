@@ -193,7 +193,10 @@ func NewConfiguration() *Configuration {
 
 		go func() {
 			<-timeout
-			syscall.Kill(syscall.Getpid(), syscall.SIGTERM)
+			proc, err := os.FindProcess(os.Getpid())
+			if err == nil {
+				proc.Kill()
+			}
 		}()
 	}
 
